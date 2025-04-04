@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:openapi/api.dart';
 
 void main() {
   runApp(const MyApp());
+  var apiClient = ApiClient(basePath: 'http://localhost:8080');
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
